@@ -1,4 +1,5 @@
 import style from "./style.css";
+import Seating from "./seating.jpg";
 
 export default function contact() {
   const contentDiv = document.getElementById("content");
@@ -14,6 +15,13 @@ export default function contact() {
 
   const article = document.createElement("article");
   article.setAttribute("id", "articleContacts");
+  const tabTitle = document.createElement("h2");
+  tabTitle.textContent = "Contacts";
+  article.appendChild(tabTitle);
+  const section = document.createElement("section");
+  section.setAttribute("id", "sectionContacts");
+  article.appendChild(section);
+
   const divLeft = document.createElement("div");
   const divRight = document.createElement("div");
   const address = document.createElement("div");
@@ -55,12 +63,19 @@ export default function contact() {
   socialmedia.appendChild(socialmediaTitle);
   socialmedia.appendChild(paraS);
 
+  const imgDiv = document.createElement("div");
+  imgDiv.setAttribute("id", "seating");
+  const seatingImg = new Image();
+  seatingImg.src = Seating;
+  imgDiv.appendChild(seatingImg);
+
   contentDiv.appendChild(header);
   contentDiv.appendChild(article);
-  article.appendChild(divLeft);
-  article.appendChild(divRight);
+  section.appendChild(divLeft);
+  section.appendChild(divRight);
   divLeft.appendChild(address);
   divLeft.appendChild(tel);
   divRight.appendChild(emailAddress);
   divRight.appendChild(socialmedia);
+  section.appendChild(imgDiv);
 }

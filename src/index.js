@@ -1,5 +1,6 @@
 import frontpage from "./page-load.js";
 import contact from "./contact.js";
+import menu from "./menu.js";
 
 frontpage();
 
@@ -40,7 +41,6 @@ function clearDom(event) {
     menu();
     tabbedbrowsing();
   } else {
-    console.log("neither");
     frontpage();
     tabbedbrowsing();
   }
