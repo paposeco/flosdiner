@@ -1,5 +1,84 @@
+body {
+  box-sizing: border-box;
+}
+
+#content {
+  width: 1280px;
+  margin: 20px auto;
+}
+
 #sectionContacts {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.menuitemsDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  max-width: 640px;
+  border-top: solid lightgray 1px;
+  border-bottom: solid lightgray 1px;
+}
+
+.menuitemsDiv:hover {
+  border: solid lightgray 1px;
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+.itemdescriptionDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 640px;
+}
+
+.itemdescriptionDiv p {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.menuitemFoto {
+  width: 200px;
+  object-fit: contain;
+}
+
+.menuitemFotoExpand {
+  width: 640px;
+}
+
+.menuitemFoto > img {
+  width: 100%;
+  height: 100%;
+}
+
+#breakfastdiv,
+#drinksdiv,
+#dessertdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 640px;
+  align-self: center;
+}
+
+#breakfastdiv > h3,
+#drinksdiv > h3,
+#dessertdiv > h3 {
+  align-self: center;
+}
+
+#articleMenu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+#articleMenu > h2 {
+  width: 640px;
+  align-self: center;
+  text-align: center;
 }
