@@ -15,9 +15,9 @@ export default function contact() {
 
   const article = document.createElement("article");
   article.setAttribute("id", "articleContacts");
-  const tabTitle = document.createElement("h2");
-  tabTitle.textContent = "Contacts";
-  article.appendChild(tabTitle);
+  //const tabTitle = document.createElement("h2");
+  //tabTitle.textContent = "Contacts";
+  //article.appendChild(tabTitle);
   const section = document.createElement("section");
   section.setAttribute("id", "sectionContacts");
   article.appendChild(section);
