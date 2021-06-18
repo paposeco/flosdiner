@@ -22,6 +22,7 @@ export default function frontpage() {
   const section = document.createElement("section");
   section.setAttribute("id", "copy");
   const frontpageCopyT = document.createElement("h3");
+  frontpageCopyT.setAttribute("id", "frontpagecopy");
   frontpageCopyT.textContent = "~ ~ ~";
   const para1 = document.createElement("p");
   const para3 = document.createElement("p");
@@ -29,7 +30,7 @@ export default function frontpage() {
     "Located on a quirky street, Flo's Diner offers the best breakfast in town at a reasonable price. We are very proud of our menu; from pancakes, to oatmeal, there is something for everyone.";
 
   para3.innerHTML =
-    "We serve breakfast every day from 6AM to 22PM. You can find us on Main Road nr 20. Contact us for more.";
+    "Breakfast is served every day from 6-22. You can find us on Main Road 20. Contact us for more.";
 
   section.appendChild(para1);
   section.appendChild(imgDiv);

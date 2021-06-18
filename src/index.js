@@ -1,6 +1,7 @@
 import frontpage from "./page-load.js";
 import contact from "./contact.js";
 import menu from "./menu.js";
+import footer from "./footer.js";
 
 frontpage();
 
@@ -58,6 +59,7 @@ function tabbedbrowsing() {
   contactLi.addEventListener("click", clearDom);
   menuLi.addEventListener("click", clearDom);
   headerLi.addEventListener("click", clearDom);
+  footer();
 }
 
 tabbedbrowsing();
