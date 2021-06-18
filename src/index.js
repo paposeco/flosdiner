@@ -1,9 +1,8 @@
+import header from "./header.js";
 import frontpage from "./page-load.js";
 import contact from "./contact.js";
 import menu from "./menu.js";
 import footer from "./footer.js";
-
-frontpage();
 
 function navigation() {
   const header = document.querySelector("header");
@@ -32,22 +31,26 @@ function clearDom(event) {
   }
   const thistarget = event.target.id;
   if (thistarget === "contact") {
-    contact();
     tabbedbrowsing();
+    contact();
+    footer();
     const contactLi = document.getElementById("contact");
     contactLi.classList.toggle("selected");
   } else if (thistarget === "menu") {
-    menu();
     tabbedbrowsing();
+    menu();
+    footer();
     const menuLi = document.getElementById("menu");
     menuLi.classList.toggle("selected");
   } else {
-    frontpage();
     tabbedbrowsing();
+    frontpage();
+    footer();
   }
 }
 
 function tabbedbrowsing() {
+  header();
   navigation();
   const contactLi = document.getElementById("contact");
   const menuLi = document.getElementById("menu");
@@ -59,7 +62,7 @@ function tabbedbrowsing() {
   contactLi.addEventListener("click", clearDom);
   menuLi.addEventListener("click", clearDom);
   headerLi.addEventListener("click", clearDom);
-  footer();
 }
-
 tabbedbrowsing();
+frontpage();
+footer();

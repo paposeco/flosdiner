@@ -19,21 +19,9 @@ import ApplePie from "./applepie.jpg";
 import PecanPie from "./pecanpie.jpg";
 
 export default function menu() {
-  const contentDiv = document.getElementById("content");
-  const header = document.createElement("header");
-  const pageTitle = document.createElement("h1");
-  const pageHeadline = document.createElement("h2");
-
-  pageTitle.textContent = "Flo's Diner";
-  pageHeadline.textContent = "Welcome to the best diner in town";
-
-  header.appendChild(pageTitle);
-  header.appendChild(pageHeadline);
-
+  const nav = document.querySelector("nav");
   const article = document.createElement("article");
   article.setAttribute("id", "articleMenu");
-  //const tabTitle = document.createElement("h2");
-  //tabTitle.textContent = "Menu";
   //breakfast
   const breakfastDiv = document.createElement("div");
   breakfastDiv.setAttribute("id", "breakfastdiv");
@@ -472,13 +460,10 @@ export default function menu() {
   dessertDiv4NameDescDiv.appendChild(dessertDiv4NameDescPara);
   dessertDiv4NamePriceDiv.appendChild(dessertDiv4NamePricePara);
 
-  //article.appendChild(tabTitle);
   article.appendChild(breakfastDiv);
   article.appendChild(drinksDiv);
   article.appendChild(dessertDiv);
-
-  contentDiv.appendChild(header);
-  contentDiv.appendChild(article);
+  nav.appendChild(article);
 }
 
 function fotoeventlistener(somediv) {

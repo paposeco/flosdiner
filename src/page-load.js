@@ -2,17 +2,7 @@ import Entrance from "./entrance.jpg";
 import contact from "./contact.js";
 
 export default function frontpage() {
-  const contentDiv = document.getElementById("content");
-  const header = document.createElement("header");
-  const pageTitle = document.createElement("h1");
-  const pageHeadline = document.createElement("h2");
-
-  pageTitle.textContent = "Flo's Diner";
-  pageHeadline.textContent = "~ Welcome to the best diner in town ~";
-
-  header.appendChild(pageTitle);
-  header.appendChild(pageHeadline);
-
+  const nav = document.querySelector("nav");
   const article = document.createElement("article");
   const imgDiv = document.createElement("div");
   imgDiv.setAttribute("id", "entrance");
@@ -41,6 +31,5 @@ export default function frontpage() {
 
   article.appendChild(section);
 
-  contentDiv.appendChild(header);
-  contentDiv.appendChild(article);
+  nav.appendChild(article);
 }

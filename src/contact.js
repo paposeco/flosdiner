@@ -3,16 +3,6 @@ import Seating from "./seating.jpg";
 
 export default function contact() {
   const contentDiv = document.getElementById("content");
-  const header = document.createElement("header");
-  const pageTitle = document.createElement("h1");
-  const pageHeadline = document.createElement("h2");
-
-  pageTitle.textContent = "Flo's Diner";
-  pageHeadline.textContent = "Welcome to the best diner in town";
-
-  header.appendChild(pageTitle);
-  header.appendChild(pageHeadline);
-
   const article = document.createElement("article");
   article.setAttribute("id", "articleContacts");
   const section = document.createElement("section");
@@ -74,8 +64,6 @@ export default function contact() {
   seatingImg.src = Seating;
   imgDiv.appendChild(seatingImg);
 
-  contentDiv.appendChild(header);
-  contentDiv.appendChild(article);
   article.appendChild(section);
   section.appendChild(div);
   div.appendChild(address);
@@ -83,4 +71,5 @@ export default function contact() {
   div.appendChild(emailAddress);
   div.appendChild(socialmedia);
   section.appendChild(imgDiv);
+  contentDiv.appendChild(article);
 }
