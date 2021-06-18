@@ -19,7 +19,7 @@ import ApplePie from "./applepie.jpg";
 import PecanPie from "./pecanpie.jpg";
 
 export default function menu() {
-  const nav = document.querySelector("nav");
+  const content = document.getElementById("content");
   const article = document.createElement("article");
   article.setAttribute("id", "articleMenu");
   //breakfast
@@ -463,7 +463,7 @@ export default function menu() {
   article.appendChild(breakfastDiv);
   article.appendChild(drinksDiv);
   article.appendChild(dessertDiv);
-  nav.appendChild(article);
+  content.appendChild(article);
 }
 
 function fotoeventlistener(somediv) {

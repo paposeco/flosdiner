@@ -2,8 +2,9 @@ import Entrance from "./entrance.jpg";
 import contact from "./contact.js";
 
 export default function frontpage() {
-  const nav = document.querySelector("nav");
+  const content = document.getElementById("content");
   const article = document.createElement("article");
+  article.setAttribute("id", "articleFrontpage");
   const imgDiv = document.createElement("div");
   imgDiv.setAttribute("id", "entrance");
   const entranceImg = new Image();
@@ -13,7 +14,7 @@ export default function frontpage() {
   section.setAttribute("id", "copy");
   const frontpageCopyT = document.createElement("h3");
   frontpageCopyT.setAttribute("id", "frontpagecopy");
-  frontpageCopyT.textContent = "~ ~ ~";
+  frontpageCopyT.textContent = "~";
   const para1 = document.createElement("p");
   const para3 = document.createElement("p");
   para1.textContent =
@@ -31,5 +32,5 @@ export default function frontpage() {
 
   article.appendChild(section);
 
-  nav.appendChild(article);
+  content.appendChild(article);
 }

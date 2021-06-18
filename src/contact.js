@@ -26,7 +26,7 @@ export default function contact() {
   const telTitle = document.createElement("h3");
   telTitle.textContent = "Telephone";
   const paraT = document.createElement("p");
-  paraT.textContent = "999999900";
+  paraT.textContent = "Tel: 999999900";
   tel.appendChild(telTitle);
   tel.appendChild(paraT);
 

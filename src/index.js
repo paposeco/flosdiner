@@ -3,26 +3,7 @@ import frontpage from "./page-load.js";
 import contact from "./contact.js";
 import menu from "./menu.js";
 import footer from "./footer.js";
-
-function navigation() {
-  const header = document.querySelector("header");
-  const nav = document.createElement("nav");
-  nav.setAttribute("id", "navigation");
-  header.appendChild(nav);
-
-  const navList = document.createElement("ul");
-  const contact = document.createElement("li");
-  contact.setAttribute("id", "contact");
-  const menu = document.createElement("li");
-  menu.setAttribute("id", "menu");
-
-  contact.textContent = "Contacts";
-  menu.textContent = "Menu";
-
-  nav.appendChild(navList);
-  navList.appendChild(menu);
-  navList.appendChild(contact);
-}
+import navigation from "./navigation.js";
 
 function clearDom(event) {
   let contentDiv = document.getElementById("content");
@@ -54,14 +35,14 @@ function tabbedbrowsing() {
   navigation();
   const contactLi = document.getElementById("contact");
   const menuLi = document.getElementById("menu");
-  const headerLi = document.querySelector("header");
+  const pagetitle = document.querySelector("h1");
   const wasSelectedCont = contactLi.classList.contains("selected");
   const wasSelectedMenu = menuLi.classList.contains("selected");
   contactLi.classList.toggle("selected", wasSelectedCont);
   menuLi.classList.toggle("selected", wasSelectedMenu);
   contactLi.addEventListener("click", clearDom);
   menuLi.addEventListener("click", clearDom);
-  headerLi.addEventListener("click", clearDom);
+  pagetitle.addEventListener("click", clearDom);
 }
 tabbedbrowsing();
 frontpage();
