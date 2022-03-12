@@ -1,5 +1,7 @@
 # Restaurant website for the Odin Project
 
+[Live Demo](https://paposeco.github.io/flosdiner/)
+
 This exercise was meant to get us used to working with webpack. On [my implementation](https://paposeco.github.io/flosdiner/) I created a page for a Diner that only serves breakfast food.
 
 ## Modules
