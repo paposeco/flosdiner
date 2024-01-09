@@ -2,6 +2,9 @@
 
 [Live Demo](https://paposeco.github.io/flosdiner/)
 
+![homepage Flo's Diner](https://github.com/paposeco/flosdiner/assets/13892562/e2128eb8-efa6-4482-9423-8282f3d0a1c2)
+![menu Flo's Diner](https://github.com/paposeco/flosdiner/assets/13892562/7f6bf5b9-e194-44da-b6fc-4d776f7a734b)
+
 This exercise was meant to get us used to working with webpack. On [my implementation](https://paposeco.github.io/flosdiner/) I created a page for a Diner that only serves breakfast food.
 
 ## Modules
